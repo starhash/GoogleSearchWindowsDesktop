@@ -44,7 +44,7 @@ namespace GoogleSearch
         {
             InitializeComponent();
             SidePaneWidth = 480;
-            Browser.NavigateToString("<html><head><style>img{position: absolute; top: 50%; left: 50%; width: 400px; height: 140px; margin-top: -65.5px; margin-left: -200px;}</style></head><body><img src=\"https://www.google.co.in/images/srpr/logo11w.png\"></body></html>");
+            Browser.NavigateToString("<html><head><style>img{position: absolute; top: 50%; left: 50%; width: 400px; height: 140px; margin-top: -65.5px; margin-left: -200px;}</style></head><body><img src=\"https://www.google.co.in/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png\"></body></html>");
             LeftArrow.Text = "";
             RightArrow.Text = "";
             Browser.Visibility = System.Windows.Visibility.Visible;

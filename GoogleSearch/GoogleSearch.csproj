@@ -164,9 +164,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Assets\FHCGSQg0_vectorized32.png" />
     <Resource Include="Assets\FHCGSQg0_vectorized64.png" />
     <Resource Include="Assets\Google.ico" />
+    <Resource Include="Assets\FHCGSQg0_vectorized32.png" />
     <Content Include="Assets\Home.html" />
   </ItemGroup>
   <ItemGroup>
