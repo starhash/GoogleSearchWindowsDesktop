@@ -18,8 +18,8 @@ namespace GoogleMiner
         private string[] tbmarr = { "", "nws", "vid", "bks" };
 
         public string SearchKey { get { return _searchkey; } }
-        public string NextPageLink { get { return "http://www.google.com/search?q=" + _searchkey + "&start=" + (_currentpage+1) * 10; } }
-        public string PreviousPageLink { get { if (_currentpage == 0) _currentpage = 1; return "http://www.google.com/search?q=" + _searchkey + "&start=" + (_currentpage - 1) * 10; } }
+        public string NextPageLink { get { return "http://www.google.com/#q=" + _searchkey + "&start=" + (_currentpage+1) * 10; } }
+        public string PreviousPageLink { get { if (_currentpage == 0) _currentpage = 1; return "http://www.google.com/#q=" + _searchkey + "&start=" + (_currentpage - 1) * 10; } }
         public List<string> SearchResultsLinks { get { return _searchresultslinks; } }
         public List<string> SearchResults { get { return _searchresults; } }
         public int ResultCount
@@ -156,7 +156,7 @@ namespace GoogleMiner
 
         private string FormURL()
         {
-            return "http://www.google.com/search?q=" + _searchkey + "&start=" + (_currentpage * 10)
+            return "http://www.google.com/#q=" + _searchkey + "&start=" + (_currentpage * 10)
                 + ((_safesearch) ? "&safe=on" : "&safe=off")
                  + ((_searchoption == 0) ? "" : "&tbm=" + tbmarr[_searchoption]);
         }
